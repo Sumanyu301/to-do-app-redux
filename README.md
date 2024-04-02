@@ -1,12 +1,15 @@
-Instructions:
+# Hosted at https://to-do-app-redux-ivory.vercel.app/
+
+**Instructions:**
+
 
 1. Clone the repository to your local machine.
 2. Navigate to the project directory: `/home/sumanyu301/Desktop/todoApp/todoApp/todoApp/`.
 3. Install the dependencies by running `npm install`.
 4. Start the development server by running `npm run dev`.
-5. Open your browser and visit `http://localhost:5173` to view the app.
+5. Open your browser and visit [http://localhost:5173](http://localhost:5173) to view the app.
 
-Features:
+**Features:**
 
 - React: The app is built using React, a popular JavaScript library for building user interfaces.
 - Vite: The app uses Vite as the build tool, providing fast and efficient development experience with instant server start and hot module replacement (HMR).

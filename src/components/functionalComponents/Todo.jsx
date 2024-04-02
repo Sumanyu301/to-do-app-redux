@@ -11,6 +11,7 @@ const Todo = ({ todo }) => {
     const handleToggleComplete = () => {
         dispatch(toggleComplete({ id: todo.id })); // Dispatch toggleComplete action
     };
+
     let changecolor = () => 'text-green-500';
     // if true then the color will be green and the text will be line-through
     return (
