@@ -7,17 +7,17 @@ import { addTodo } from "@/redux/todoSlice";
 const InputWithButton = () => {
   const dispatch = useDispatch();
 
-  const addTodoHandler = (task) => {
+  const addTodoHandler = (task) => {//this ensures that the task is not empty and then dispatches the addTodo action
     dispatch(addTodo({
       id: new Date().getTime(), // Unique id
       title: task,
-      description: ""
+      description: ""// Empty description future use
     }));
   };
 
   const handleAddButtonClick = () => {
-    const inputValue = document.querySelector('input[type="text"]').value;
-    if (!inputValue.trim()) {
+    const inputValue = document.querySelector('input[type="text"]').value; // Get the input value from the DOM
+    if (!inputValue.trim()) {// Check if the input value is empty or only contains spaces
       alert("Empty todo! Please enter a task.");
       return;
     }

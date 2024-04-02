@@ -4,7 +4,6 @@ import InputWithButton from "../ui/InputWithButton";
 import { useSelector } from "react-redux"
 import ShowTodo from "./ShowTodo";
 const Body = () => {
-    const todos = useSelector((state)=>state.todos);
     return (
         <>
         <div className=" max-w-screen-2xl">

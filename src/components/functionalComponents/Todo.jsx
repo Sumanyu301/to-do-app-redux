@@ -11,12 +11,13 @@ const Todo = ({ todo }) => {
     const handleToggleComplete = () => {
         dispatch(toggleComplete({ id: todo.id })); // Dispatch toggleComplete action
     };
+    let changecolor = () => 'text-green-500';
     // if true then the color will be green and the text will be line-through
     return (
         <div className="flex justify-center items-center">
-            <div className={`flex justify-between items-center bg-zinc-700 p-4 rounded-lg shadow-lg mb-4 w-128 ${todo.completed ? 'bg-green-400' : ''}`}>
+            <div className={`flex justify-between items-center bg-zinc-700 p-4 rounded-lg shadow-lg mb-4 w-128 ${todo.completed ? changecolor() : ''}`}>
                 <div>
-                    <h1 className={`text-xl font-semibold text-black ${todo.completed ? 'line-through' : ''}`}>{todo.title}</h1>
+                    <h1 className={`text-xl font-semibold text-black ${todo.completed ? changecolor() : ''}`}>{todo.title}</h1>
                     <p className={`text-sm text-gray-500 ${todo.completed ? 'line-through' : ''}`}>{todo.description}</p>
                 </div>
                 <div>

@@ -4,7 +4,7 @@ import Todo from "./Todo";
 
 
 const ShowTodo = () => {
-    const todos = useSelector((state) => state?.todos?.todos); 
+    const todos = useSelector((state) => state?.todos?.todos); // subscribing to the store
     if (!Array.isArray(todos)) {
         return null; // or handle the error in some other way
     }
