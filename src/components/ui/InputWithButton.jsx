@@ -22,6 +22,7 @@ const InputWithButton = () => {
       return;
     }
     addTodoHandler(inputValue);
+    document.querySelector('input[type="text"]').value = ""; // Empty the input value
   };
 
   return (
